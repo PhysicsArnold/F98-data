@@ -1,0 +1,47 @@
+F98 - SQUID: Results
+====================
+
+Uncertainties: total uncertainty (components added in quadrature).
+Components: stat. = fit (input uncertainties, scaled by sqrt(chi2_red) if > 1),
+cal. = current calibration (U_pp resolution), rep. = half difference of the repeat measurements.
+
+5.2.1 - Characteristics of the single SQUID
+-------------------------------------------
+Integer flux (fit range 5.5 ... 14 µA):
+  Measurement 1: m = (3.5851 ± 0.0081) mV/µA, b = (43.329 ± 0.082) mV, R_N = (1.7925 ± 0.0041) Ω, chi2_red = 3.82
+  Measurement 2: m = (3.6565 ± 0.0077) mV/µA, b = (42.980 ± 0.078) mV, R_N = (1.8283 ± 0.0039) Ω, chi2_red = 3.71
+  R_N (mean)  = (1.810 ± 0.023) Ω
+Half-integer flux (fit range -0.5 ... 10 µA):
+  Measurement 1: m = (3.3151 ± 0.0048) mV/µA, b = (49.970 ± 0.027) mV, R_N = (1.6576 ± 0.0024) Ω, chi2_red = 3.00
+  Measurement 2: m = (3.3194 ± 0.0048) mV/µA, b = (49.927 ± 0.027) mV, R_N = (1.6597 ± 0.0024) Ω, chi2_red = 3.01
+  R_N (mean)  = (1.659 ± 0.013) Ω
+SQUID resistance              R_SQUID = (1.735 ± 0.013) Ω
+Josephson junction resistance R_J     = (3.469 ± 0.027) Ω
+
+Critical current              I_1 = (-25.50 ± 1.50) µA, I_2 = (-4.50 ± 1.50) µA
+                              I_c = (15.00 ± 1.06) µA
+
+Inverse mutual inductance feedback coil M_PhiB^-1 = (38.67 ± 0.99) µA/Phi0  (reading 0.94, cal. 0.30)
+Inverse mutual inductance input coil    M_IN^-1   = (8.889 ± 0.322) µA/Phi0  (reading 0.314, cal. 0.070)
+
+5.2.2 - Single-stage FLL (R_F = 100 kOhm)
+-----------------------------------------
+  Measurement 1: slope m = (-0.4861 ± 0.0001) V/µA
+  Measurement 2: slope m = (-0.4819 ± 0.0001) V/µA
+Theoretical amplification  A_theo = (0.435 ± 0.019) V/µA
+Experimental amplification A_exp  = (0.4840 ± 0.0043) V/µA
+Deviation                         = 2.48 sigma
+
+5.3.2 - Noise thermometry (two-stage setup, R_F = 30 kOhm)
+----------------------------------------------------------
+Transimpedance gain        A   = (0.1452 ± 0.0013) V/µA
+Input inductance           L_IN = 2.9 nH
+Fit range                  0.0238 ... 1.6685 MHz
+Relative scatter per bin   3.0 %, chi2_red = 2.55
+Temperature                T   = (4.30 ± 0.12) K  (stat. 0.007, fit range 0.089, gain 0.077) K
+Resistance                 R   = (13.13 ± 0.71) mOhm  (stat. 0.039, fit range 0.712) mOhm
+Cutoff frequency           f_c = (721 ± 39) kHz
+
+Notes
+-----
+* 5.3.2: the files two_stage_30kO_4GHz_1 and _2 are identical, only _1 is evaluated.
