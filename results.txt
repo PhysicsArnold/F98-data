@@ -24,6 +24,20 @@ Critical current              I_1 = (-25.50 ± 1.50) µA, I_2 = (-4.50 ± 1.50) 
 Inverse mutual inductance feedback coil M_PhiB^-1 = (38.67 ± 0.99) µA/Phi0  (reading 0.94, cal. 0.30)
 Inverse mutual inductance input coil    M_IN^-1   = (8.889 ± 0.322) µA/Phi0  (reading 0.314, cal. 0.070)
 
+V-Phi characteristics (measurement _2, rising ramp, bins 1/12 ... 1/20 Phi0;
+values at the SQUID = output / 2000):
+  Working point (SQUID viewer): I_B,opt = 15.607 µA, V_B = 19.93 µV
+  Feedback coil:
+    V_pp (output) = (21.76 ± 0.29) mV, V_pp (SQUID) = (10.88 ± 0.14) µV
+    V_Phi (SQUID) = (38.6 ± 2.1) µV/Phi0
+    Sine fit: P_1 = (38.303 ± 0.004) µA, P_2 = (38.310 ± 0.004) µA, P = (38.31 ± 0.30) µA
+    Periods between -60 and 56 µA: N = 3.03 ± 0.07 (used: N = 3)
+  Input coil:  (current resolution coarser than the bins: no spread over the bin widths)
+    V_pp (output) = (21.73 ± 0.00) mV, V_pp (SQUID) = (10.86 ± 0.00) µV
+    V_Phi (SQUID) = (41.1 ± 0.0) µV/Phi0
+    Sine fit: P_1 = (8.872 ± 0.001) µA, P_2 = (8.869 ± 0.001) µA, P = (8.87 ± 0.07) µA
+    Periods between -40.5 and 39.5 µA: N = 9.02 ± 0.32 (used: N = 9)
+
 5.2.2 - Single-stage FLL (R_F = 100 kOhm)
 -----------------------------------------
   Measurement 1: slope m = (-0.4861 ± 0.0001) V/µA
@@ -31,6 +45,22 @@ Inverse mutual inductance input coil    M_IN^-1   = (8.889 ± 0.322) µA/Phi0  (
 Theoretical amplification  A_theo = (0.435 ± 0.019) V/µA
 Experimental amplification A_exp  = (0.4840 ± 0.0043) V/µA
 Deviation                         = 2.48 sigma
+
+5.2.3 - SQUID noise (R_F = 30 kOhm, GBP = 1.5 GHz)
+-------------------------------------------------
+White noise level (median 3-20 kHz) L      = (-70.48 ± 0.06) dBV
+Voltage noise density               √S_V   = (13.70 ± 0.09) µV/√Hz
+Flux noise density                  √S_Phi = (11.81 ± 0.31) µPhi0/√Hz
+-3-dB frequency (measured)          f_3dB  = 46.7 kHz (frequency resolution 0.48 kHz)
+-3-dB frequency (GBP V_Phi/(R_F M)) f_3dB  = (49.9 ± 3.0) kHz
+
+5.3.1 - Two-stage setup, V-Phi characteristic (I_pp = 100.05 µA)
+------------------------------------------------------------
+Period (scan)      P    = (42.85 ± 0.34) µA
+Period (sine fit)  P    = (42.79 ± 0.34) µA
+Swing (smoothed)   V_pp = (473 ± 5) mV
+Max. slope              = (3557 ± 207) mV/period = (83.1 ± 4.9) mV/µA
+Working point      I = 26.006 µA, I_B = 9.705 µA, V_B = 178.12 µV
 
 5.3.2 - Noise thermometry (two-stage setup, R_F = 30 kOhm)
 ----------------------------------------------------------
@@ -41,6 +71,8 @@ Relative scatter per bin   3.0 %, chi2_red = 2.55
 Temperature                T   = (4.30 ± 0.12) K  (stat. 0.007, fit range 0.089, gain 0.077) K
 Resistance                 R   = (13.13 ± 0.71) mOhm  (stat. 0.039, fit range 0.712) mOhm
 Cutoff frequency           f_c = (721 ± 39) kHz
+Resonance (GBP = 7.2 GHz)  f_res = 4.6382 MHz (frequency resolution 0.48 kHz)
+Level difference 100 kOhm vs 30 kOhm (7.2 GHz, 3-20 kHz): (10.39 ± 0.07) dB (expected 10.46 dB)
 
 Notes
 -----
