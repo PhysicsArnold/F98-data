@@ -18,8 +18,11 @@ Half-integer flux (fit range -0.5 ... 10 µA):
 SQUID resistance              R_SQUID = (1.735 ± 0.013) Ω
 Josephson junction resistance R_J     = (3.469 ± 0.027) Ω
 
-Critical current              I_1 = (-25.50 ± 1.50) µA, I_2 = (-4.50 ± 1.50) µA
-                              I_c = (15.00 ± 1.06) µA
+Cross-check I_pp = 180 µA     R_N = 1.840 Ω (_1), 1.853 Ω (_2), mean 1.846 Ω
+
+Critical current (Offset 1/2 pp: I(t) = I_pp/20 ms * |t - t0|, t0 = -10 ms)
+                              I_1 = (10.50 ± 1.50) µA, I_2 = (10.50 ± 1.50) µA
+                              I_c^SQUID = (10.50 ± 1.06) µA, per junction I_c/2 = (5.25 ± 0.53) µA
 
 Inverse mutual inductance feedback coil M_PhiB^-1 = (38.67 ± 0.99) µA/Phi0  (reading 0.94, cal. 0.30)
 Inverse mutual inductance input coil    M_IN^-1   = (8.889 ± 0.322) µA/Phi0  (reading 0.314, cal. 0.070)
