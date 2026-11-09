@@ -18,7 +18,7 @@ Half-integer flux (fit range -0.5 ... 10 µA):
 SQUID resistance              R_SQUID = (1.735 ± 0.013) Ω
 Josephson junction resistance R_J     = (3.469 ± 0.027) Ω
 
-Critical current (see note)   I_1 = (-25.50 ± 1.50) µA, I_2 = (-4.50 ± 1.50) µA
+Critical current              I_1 = (-25.50 ± 1.50) µA, I_2 = (-4.50 ± 1.50) µA
                               I_c = (15.00 ± 1.06) µA
 
 Inverse mutual inductance feedback coil M_PhiB^-1 = (38.67 ± 0.99) µA/Phi0  (reading 0.94, cal. 0.30)
@@ -35,16 +35,13 @@ Deviation                         = 2.48 sigma
 5.3.2 - Noise thermometry (two-stage setup, R_F = 30 kOhm)
 ----------------------------------------------------------
 Transimpedance gain        A   = (0.1452 ± 0.0013) V/µA
-Input inductance           L_IN = 2.9 nH (uncertainty 0.0 nH)
+Input inductance           L_IN = 2.9 nH
 Fit range                  0.0238 ... 1.6685 MHz
 Relative scatter per bin   3.0 %, chi2_red = 2.55
-Temperature                T   = (4.30 ± 0.12) K  (stat. 0.007, fit range 0.089, gain 0.077, L_IN 0.000) K
-Resistance                 R   = (13.13 ± 0.71) mOhm  (stat. 0.039, fit range 0.712, L_IN 0.000) mOhm
+Temperature                T   = (4.30 ± 0.12) K  (stat. 0.007, fit range 0.089, gain 0.077) K
+Resistance                 R   = (13.13 ± 0.71) mOhm  (stat. 0.039, fit range 0.712) mOhm
 Cutoff frequency           f_c = (721 ± 39) kHz
 
 Notes
 -----
-* I_c: the calculation assumes a linear ramp beyond t = -10 ms, but the ramp is triangular.
-  The result always equals I_pp/2 and should be revised before use.
-* R_N at integer and half-integer flux differ by 0.152 Ω, much more than their uncertainties.
 * 5.3.2: the files two_stage_30kO_4GHz_1 and _2 are identical, only _1 is evaluated.
